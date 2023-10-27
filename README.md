@@ -48,7 +48,8 @@ The "Assign Marks" function is also under development to enable teachers to uplo
 Lastly, the "Assign Grades" function is in progress, allowing teachers to upload student grades.
 
 This project involves a comprehensive set of features that I'm implementing step by step. It's important to ensure that each functionality is tested thoroughly before moving on to the next.
-Instruction to run Project
+
+**Instruction to run Project**
 1. Download and extract the folder.
 2. Go to Flex>login pages.
 3. Launch LoginPages.sln.
