@@ -1,4 +1,4 @@
-###Flex-Managment-System
+### Flex-Managment-System
 Flex System Created with C#  and Visual Studio  Window form  is excellent project to practice the concept of Object Oriented Programming. Flex is LMS system used by teachers,students and admin to manage various tasks. 
 The Project compromises of  three main modules where C# programming is in "Flex" Project and graphics are used in project "Login Pages":
 **Administrator's Module.
