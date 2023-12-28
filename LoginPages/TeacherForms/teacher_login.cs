@@ -45,16 +45,19 @@ namespace LoginPages.Teacher
         private void button1_Click(object sender, EventArgs e)
         {
             TeacherClass teacher = new TeacherClass();
-            teacher = teacher.Search("Username", username);
+            if(teacher==null)
+            {
+                MessageBox.Show("Enter valid username and password");
+                return;
+            }
+            else 
+            teacher = teacher.Search(username, password);
             if (teacher.getPassword() == password)
             {
                 teacher2 teacher2 = new teacher2();
                 teacher2.Show();
                 this.Hide();
-            } else
-            {
-                MessageBox.Show("Wrong Username or Password!");
-            }
+            } 
         }
     }
 }

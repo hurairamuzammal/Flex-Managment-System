@@ -32,14 +32,20 @@ namespace LoginPages.Student
         private void button1_Click(object sender, EventArgs e)
         {
             StudentClass student = new StudentClass();
+
             student = student.Login(username, password);
+            if (student == null)
+            {
+                MessageBox.Show("Enter valid username and password");
+                return;
+            }
+            else
             if (student.getPassword() == password)
             {
                 student2 student2 = new student2();
                 student2.Show();
                 this.Hide();
             }
-            else MessageBox.Show("Wrong Username or Password!!!");
 
 
         }

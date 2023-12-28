@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Huraira\\source\\repos\\LoginPages\\LoginPages.csproj": {}
+    "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\LoginPages\\LoginPages.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Huraira\\source\\repos\\Flex\\Flex.csproj": {
+    "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\Flex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huraira\\source\\repos\\Flex\\Flex.csproj",
+        "projectUniqueName": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\Flex.csproj",
         "projectName": "Flex",
-        "projectPath": "C:\\Users\\Huraira\\source\\repos\\Flex\\Flex.csproj",
+        "projectPath": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\Flex.csproj",
         "packagesPath": "C:\\Users\\Huraira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huraira\\source\\repos\\Flex\\obj\\",
+        "outputPath": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Huraira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,18 +65,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Huraira\\source\\repos\\LoginPages\\LoginPages.csproj": {
+    "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\LoginPages\\LoginPages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huraira\\source\\repos\\LoginPages\\LoginPages.csproj",
+        "projectUniqueName": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\LoginPages\\LoginPages.csproj",
         "projectName": "LoginPages",
-        "projectPath": "C:\\Users\\Huraira\\source\\repos\\LoginPages\\LoginPages.csproj",
+        "projectPath": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\LoginPages\\LoginPages.csproj",
         "packagesPath": "C:\\Users\\Huraira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huraira\\source\\repos\\LoginPages\\obj\\",
+        "outputPath": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\LoginPages\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Huraira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,8 +93,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\Huraira\\source\\repos\\Flex\\Flex.csproj": {
-                "projectPath": "C:\\Users\\Huraira\\source\\repos\\Flex\\Flex.csproj"
+              "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\Flex.csproj": {
+                "projectPath": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\Flex.csproj"
               }
             }
           }
@@ -133,7 +133,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

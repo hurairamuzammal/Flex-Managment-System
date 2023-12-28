@@ -4844,11 +4844,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Huraira\\source\\repos\\Flex\\Flex.csproj",
+      "projectUniqueName": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\Flex.csproj",
       "projectName": "Flex",
-      "projectPath": "C:\\Users\\Huraira\\source\\repos\\Flex\\Flex.csproj",
+      "projectPath": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\Flex.csproj",
       "packagesPath": "C:\\Users\\Huraira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Huraira\\source\\repos\\Flex\\obj\\",
+      "outputPath": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Huraira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4902,7 +4902,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
