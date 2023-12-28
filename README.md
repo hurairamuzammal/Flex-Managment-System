@@ -58,7 +58,7 @@ This project involves a comprehensive set of features that I'm implementing step
 2. Go to Flex>login pages.
 3. Launch LoginPages.sln.
 
-# Developers:
-This project is devopled by:
-[Huraira Muzammal ][https://github.com/hurairamuzammal] 
+# Developers:  
+This project is devopled by:  
+[Huraira Muzammal ][https://github.com/hurairamuzammal]  
 [Shayan Zawar ][https://github.com/SHAYANZAWAR]
