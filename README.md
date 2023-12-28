@@ -4,7 +4,7 @@ The Project compromises of  three main modules where C# programming is in "Flex"
 **Administrator's Module.  
 Teacher's Module.  
 Student's Module.**  
-Here's what i have done in this project 
+Here's what we have done in this project 
 # To Use You Can Use the following Username and Passwords:
 admin login:   username:admin     Password: admin  
 teacher login: username:Username  Password:Username@123  
@@ -57,3 +57,8 @@ This project involves a comprehensive set of features that I'm implementing step
 1. Download and extract the folder.
 2. Go to Flex>login pages.
 3. Launch LoginPages.sln.
+
+# Developers:
+This project is devopled by:
+### [Huraira Muzammal ][https://github.com/hurairamuzammal] 
+### 
