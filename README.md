@@ -6,9 +6,9 @@ Teacher's Module.
 Student's Module.**  
 Here's what i have done in this project 
 # To Use You Can Use the following Username and Passwords:
-admin login:  username:admin  password: admin  
-teacher login: username:Username Password:Username@123  
-student login: username:abubaker Password:abubaker  
+admin login:   username:admin     Password: admin  
+teacher login: username:Username  Password:Username@123  
+student login: username:abubaker  Password:abubaker  
 # **Administrator Module:**
 
 I've implemented a "Sign In" feature that prompts users to enter their unique username and password for authentication. For now, I'm using "admin/admin" for testing.
