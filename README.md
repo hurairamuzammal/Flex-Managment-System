@@ -60,5 +60,5 @@ This project involves a comprehensive set of features that I'm implementing step
 
 # Developers:
 This project is devopled by:
-### [Huraira Muzammal ][https://github.com/hurairamuzammal] 
-### 
+[Huraira Muzammal ][https://github.com/hurairamuzammal] 
+[Shayan Zawar ][https://github.com/SHAYANZAWAR]
