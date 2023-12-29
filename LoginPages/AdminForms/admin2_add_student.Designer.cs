@@ -89,17 +89,19 @@
             // 
             // fn_Box
             // 
+            fn_Box.Font = new Font("Bahnschrift", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             fn_Box.Location = new Point(356, 148);
             fn_Box.Name = "fn_Box";
-            fn_Box.Size = new Size(308, 30);
+            fn_Box.Size = new Size(308, 28);
             fn_Box.TabIndex = 3;
             fn_Box.TextChanged += fn_Box_TextChanged;
             // 
             // ln_box
             // 
+            ln_box.Font = new Font("Bahnschrift", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             ln_box.Location = new Point(917, 148);
             ln_box.Name = "ln_box";
-            ln_box.Size = new Size(308, 30);
+            ln_box.Size = new Size(308, 28);
             ln_box.TabIndex = 4;
             ln_box.TextChanged += ln_box_TextChanged;
             // 
@@ -127,17 +129,19 @@
             // 
             // rn_box
             // 
+            rn_box.Font = new Font("Bahnschrift Condensed", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             rn_box.Location = new Point(917, 306);
             rn_box.Name = "rn_box";
-            rn_box.Size = new Size(308, 30);
+            rn_box.Size = new Size(308, 28);
             rn_box.TabIndex = 8;
             rn_box.TextChanged += rn_box_TextChanged;
             // 
             // dp_box
             // 
+            dp_box.Font = new Font("Bahnschrift Condensed", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             dp_box.Location = new Point(356, 228);
             dp_box.Name = "dp_box";
-            dp_box.Size = new Size(869, 30);
+            dp_box.Size = new Size(869, 28);
             dp_box.TabIndex = 7;
             dp_box.TextChanged += dp_box_TextChanged;
             // 
@@ -165,17 +169,19 @@
             // 
             // contact_box
             // 
+            contact_box.Font = new Font("Bahnschrift Condensed", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             contact_box.Location = new Point(356, 306);
             contact_box.Name = "contact_box";
-            contact_box.Size = new Size(314, 30);
+            contact_box.Size = new Size(314, 28);
             contact_box.TabIndex = 16;
             contact_box.TextChanged += contact_box_TextChanged;
             // 
             // qual_box
             // 
+            qual_box.Font = new Font("Bahnschrift Condensed", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             qual_box.Location = new Point(356, 553);
             qual_box.Name = "qual_box";
-            qual_box.Size = new Size(849, 30);
+            qual_box.Size = new Size(849, 28);
             qual_box.TabIndex = 15;
             qual_box.TextChanged += qual_box_TextChanged;
             // 
@@ -203,17 +209,19 @@
             // 
             // gen_box
             // 
+            gen_box.Font = new Font("Bahnschrift Condensed", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             gen_box.Location = new Point(356, 467);
             gen_box.Name = "gen_box";
-            gen_box.Size = new Size(849, 30);
+            gen_box.Size = new Size(849, 28);
             gen_box.TabIndex = 12;
             gen_box.TextChanged += gen_box_TextChanged;
             // 
             // reg_box
             // 
+            reg_box.Font = new Font("Bahnschrift Condensed", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             reg_box.Location = new Point(356, 386);
             reg_box.Name = "reg_box";
-            reg_box.Size = new Size(849, 30);
+            reg_box.Size = new Size(849, 28);
             reg_box.TabIndex = 11;
             reg_box.TextChanged += reg_box_TextChanged;
             // 
@@ -241,17 +249,19 @@
             // 
             // un_box
             // 
+            un_box.Font = new Font("Bahnschrift Condensed", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             un_box.Location = new Point(356, 975);
             un_box.Name = "un_box";
-            un_box.Size = new Size(239, 30);
+            un_box.Size = new Size(239, 28);
             un_box.TabIndex = 22;
             un_box.TextChanged += un_box_TextChanged;
             // 
             // ps_box
             // 
+            ps_box.Font = new Font("Bahnschrift Condensed", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             ps_box.Location = new Point(966, 975);
             ps_box.Name = "ps_box";
-            ps_box.Size = new Size(239, 30);
+            ps_box.Size = new Size(239, 28);
             ps_box.TabIndex = 21;
             ps_box.TextChanged += ps_box_TextChanged;
             // 
@@ -279,9 +289,10 @@
             // 
             // address_box
             // 
+            address_box.Font = new Font("Bahnschrift Condensed", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             address_box.Location = new Point(356, 637);
             address_box.Name = "address_box";
-            address_box.Size = new Size(849, 30);
+            address_box.Size = new Size(849, 28);
             address_box.TabIndex = 18;
             address_box.TextChanged += address_box_TextChanged;
             // 
@@ -311,17 +322,19 @@
             // 
             // marks_box
             // 
+            marks_box.Font = new Font("Bahnschrift Condensed", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             marks_box.Location = new Point(356, 897);
             marks_box.Name = "marks_box";
-            marks_box.Size = new Size(849, 30);
+            marks_box.Size = new Size(849, 28);
             marks_box.TabIndex = 35;
             marks_box.TextChanged += marks_box_TextChanged;
             // 
             // fee_box
             // 
+            fee_box.Font = new Font("Bahnschrift Condensed", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             fee_box.Location = new Point(356, 815);
             fee_box.Name = "fee_box";
-            fee_box.Size = new Size(849, 30);
+            fee_box.Size = new Size(849, 28);
             fee_box.TabIndex = 34;
             fee_box.TextChanged += textBox2_TextChanged;
             // 
@@ -349,9 +362,10 @@
             // 
             // blood_box
             // 
+            blood_box.Font = new Font("Bahnschrift Condensed", 9.134328F, FontStyle.Regular, GraphicsUnit.Point);
             blood_box.Location = new Point(356, 729);
             blood_box.Name = "blood_box";
-            blood_box.Size = new Size(849, 30);
+            blood_box.Size = new Size(849, 28);
             blood_box.TabIndex = 31;
             blood_box.TextChanged += blood_box_TextChanged;
             // 

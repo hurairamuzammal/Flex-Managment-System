@@ -173,7 +173,7 @@
             // 
             // usernameTextBox
             // 
-            usernameTextBox.Font = new Font("Bahnschrift", 11.8208952F, FontStyle.Regular, GraphicsUnit.Point);
+            usernameTextBox.Font = new Font("Bahnschrift Condensed", 11.8208952F, FontStyle.Regular, GraphicsUnit.Point);
             usernameTextBox.ForeColor = SystemColors.ControlText;
             usernameTextBox.Location = new Point(42, 185);
             usernameTextBox.Name = "usernameTextBox";

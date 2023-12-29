@@ -859,6 +859,8 @@ namespace Flex.EducationalPerson
         {
             RowData rowData = null;
 
+            // also update this to use the dynamic path to the document
+            
             using (SpreadsheetDocument document = SpreadsheetDocument.Open(filePath, true))
             {
                 WorkbookPart workbookPart = document.WorkbookPart;
