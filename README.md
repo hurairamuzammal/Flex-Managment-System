@@ -62,6 +62,6 @@ This project involves a comprehensive set of features that I'm implementing step
 3. Launch LoginPages.sln.
 
 # Developers:  
-This project is jointly devopled by:  
+This project is jointly developed by:  
 [Huraira Muzammal](https://github.com/hurairamuzammal "profile") and 
 [Shayan Zawar](https://github.com/SHAYANZAWAR "profile"). 
