@@ -33,13 +33,9 @@ namespace LoginPages.Student
         {
             StudentClass student = new StudentClass();
 
+
             student = student.Login(username, password);
-            if (student == null)
-            {
-                MessageBox.Show("Enter valid username and password");
-                return;
-            }
-            else
+            if(student==null) { MessageBox.Show("Wrong Username or Password!!!");return; }
             if (student.getPassword() == password)
             {
                 student2 student2 = new student2();

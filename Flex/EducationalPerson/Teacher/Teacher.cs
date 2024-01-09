@@ -6,22 +6,19 @@ using System.Threading.Tasks;
 using Flex.EducationalPerson.student;
 using Flex.EducationalPerson.DateClass;
 
-
 namespace Flex.EducationalPerson.teacher
 {
     public class TeacherClass : EducationalPerson
     {
 
         private string filePath;
-        
-
         private ExcelWrite outs;
         private TestModelList tmList;
 
         public TeacherClass()
         {
             outs = new ExcelWrite();
-            filePath = "./EducationalPerson/Teacher/";
+            filePath = "C:/Users/Huraira/source/repos/Flex/EducationalPerson/Teacher/";
 
         }
         public override bool addToRecord(string firstName, string lastName, string deptName, string id, string regisDate, string gender, string contactNo,

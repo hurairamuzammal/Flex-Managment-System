@@ -140,10 +140,10 @@
             // 
             // textBox2
             // 
-            textBox2.Font = new Font("Bahnschrift", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Font = new Font("Bahnschrift", 10.2089548F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.Location = new Point(44, 314);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(346, 32);
+            textBox2.Size = new Size(346, 30);
             textBox2.TabIndex = 3;
             // 
             // label2
@@ -161,12 +161,12 @@
             // 
             // textBox1
             // 
-            textBox1.Font = new Font("Bahnschrift", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Font = new Font("Bahnschrift", 10.2089548F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = SystemColors.InactiveCaptionText;
             textBox1.Location = new Point(47, 192);
             textBox1.Name = "textBox1";
             textBox1.ScrollBars = ScrollBars.Horizontal;
-            textBox1.Size = new Size(343, 32);
+            textBox1.Size = new Size(343, 30);
             textBox1.TabIndex = 1;
             textBox1.TextChanged += textBox1_TextChanged;
             // 

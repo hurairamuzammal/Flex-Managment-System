@@ -1,0 +1,17 @@
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\Flex.exe
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\LoginPages.exe
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\Flex.deps.json
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\Flex.runtimeconfig.json
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\LoginPages.dll
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\LoginPages.deps.json
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\LoginPages.runtimeconfig.json
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\LoginPages.pdb
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\ClosedXML.dll
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\DocumentFormat.OpenXml.dll
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\DocumentFormat.OpenXml.Features.dll
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\ExcelNumberFormat.dll
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\Irony.dll
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\SixLabors.Fonts.dll
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\XLParser.dll
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\Flex.dll
+C:\Users\Huraira\source\repos\LoginPages\bin\Release\net7.0-windows\app.publish\Flex.pdb

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 using Flex.EducationalPerson;
 using Flex.EducationalPerson.DateClass;
 namespace Flex.EducationalPerson.student
@@ -14,10 +13,8 @@ namespace Flex.EducationalPerson.student
         private int m_marks;
         private ExcelWrite outs;
         private TestModelList tmList;
-        public string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "EducationalPerson/Student");
-
-
         // The name of the file that contains the data
+        private string filePath;
         // constructor
         public StudentClass() : base()
         {
@@ -25,16 +22,7 @@ namespace Flex.EducationalPerson.student
             m_feeStatus = "";
             m_marks = 0;
             outs = new ExcelWrite();
-            // filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "EducationalPerson/Student/StudentRecord.xlsx");
-            
-            if (File.Exists(filePath))
-            {
-                
-            }
-            else
-            {
-               string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "EducationalPerson/Student/StudentRecord.xlsx");
-            }
+            filePath = "C:/Users/Huraira/source/repos/Flex/EducationalPerson/Student/";
         }
 
         ~StudentClass()

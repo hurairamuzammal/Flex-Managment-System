@@ -6,14 +6,10 @@ using X14 = DocumentFormat.OpenXml.Office2010.Excel;
 using X15 = DocumentFormat.OpenXml.Office2013.Excel;
 using System;
 using System.Collections.Generic;
-using System.IO; // Add the System.IO namespace for file operations
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using System.IO;
-
-
 
 namespace Flex.EducationalPerson
 {
@@ -863,8 +859,6 @@ namespace Flex.EducationalPerson
         {
             RowData rowData = null;
 
-            // also update this to use the dynamic path to the document
-            
             using (SpreadsheetDocument document = SpreadsheetDocument.Open(filePath, true))
             {
                 WorkbookPart workbookPart = document.WorkbookPart;
