@@ -40,34 +40,60 @@ namespace LoginPages
 
         private void open_button_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            using (XLWorkbook workbook = new XLWorkbook("C:/Users/Huraira/source/repos/Flex/EducationalPerson/Teacher/TeacherRecord.xlsx"))
-            {
-                bool isFirstRow = true;
-                var rows = workbook.Worksheet(1).RowsUsed();
-                foreach (var row in rows)
-                {
-                    if (isFirstRow)
-                    {
-                        foreach (IXLCell cell in row.Cells())
-                            dt.Columns.Add(cell.Value.ToString());
-                        isFirstRow = false;
+               DataTable dt = new DataTable();
+               DirectoryInfo di = new DirectoryInfo("../../../../");
+               string filePath = di.FullName.ToString() + "Flex\\EducationalPerson\\Teacher\\TeacherRecord.xlsx";
+               int idInd = 0;
+               string key = textBox1.Text;
+               bool found = false;
+               if (key == "")
+               {
+                    MessageBox.Show("Please enter the id of the Teacher you want to edit");
+               }
 
-                    }
-                    else
+               using (XLWorkbook workbook = new XLWorkbook(filePath))
+               {
+                    bool isFirstRow = true;
+                    var rows = workbook.Worksheet(1).RowsUsed();
+                    foreach (var row in rows)
                     {
-                        dt.Rows.Add();
-                        int i = 0;
-                        foreach (IXLCell cell in row.Cells())
-                            dt.Rows[dt.Rows.Count - 1][i++] = cell.Value.ToString();
-                    }
-                }
-                dataGridView1.DataSource = dt.DefaultView;
-                // lblTotal.Text = $"Total records:{dataGridView1.RowCount}";
-                Cursor.Current = Cursors.Default;
+                         if (isFirstRow)
+                         {
+                              foreach (IXLCell cell in row.Cells())
+                              {
+                                   dt.Columns.Add(cell.Value.ToString());
+                                   if (cell.Value.ToString() == "ID") { idInd = cell.Address.ColumnNumber; }
+                              }
+                              isFirstRow = false;
 
-            }
-        }
+                         }
+                         else
+                         {
+                              if (row.Cell(idInd).Value.ToString() == key)
+                              {
+                                   found = true;
+                                   dt.Rows.Add();
+                                   int i = 0;
+                                   foreach (IXLCell cell in row.Cells())
+                                        dt.Rows[dt.Rows.Count - 1][i++] = cell.Value.ToString();
+
+                              }
+                              break;
+                         }
+                    }
+
+                    if (found == false)
+                    {
+                         dt.Clear();
+                         MessageBox.Show("No Teacher with this id exists");
+                    }
+
+                    dataGridView1.DataSource = dt.DefaultView;
+
+                    Cursor.Current = Cursors.Default;
+
+               }
+          }
 
         private void qualification_box_TextChanged(object sender, EventArgs e)
         {

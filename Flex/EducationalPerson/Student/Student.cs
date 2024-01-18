@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using DocumentFormat.OpenXml.ExtendedProperties;
 using Flex.EducationalPerson;
 using Flex.EducationalPerson.DateClass;
 namespace Flex.EducationalPerson.student
@@ -22,8 +24,10 @@ namespace Flex.EducationalPerson.student
             m_feeStatus = "";
             m_marks = 0;
             outs = new ExcelWrite();
-            filePath = "C:/Users/Huraira/source/repos/Flex/EducationalPerson/Student/";
-        }
+            DirectoryInfo di = new DirectoryInfo("../../../../");
+            filePath = di.FullName.ToString() + "Flex\\EducationalPerson\\Student";
+
+          }
 
         ~StudentClass()
         {
@@ -73,18 +77,18 @@ namespace Flex.EducationalPerson.student
         internal string markStudentAttendance(string rollNo, string subject, string attendance)
         {
             // returning the status messages from the markAttendance function
-            return (outs.markAttendance((filePath + "StudentRecord.xlsx"), rollNo, DateTime.Now, subject, attendance));
+            return (outs.markAttendance((filePath + "\\StudentRecord.xlsx"), rollNo, DateTime.Now, subject, attendance));
         }
         public string assignStudentMarks(string rollNo, DateTime date, string subject, string marks)
         {
 
-            return outs.assignMarks((filePath + "StudentRecord.xlsx"), rollNo, date, subject, marks);
+            return outs.assignMarks((filePath + "\\StudentRecord.xlsx"), rollNo, date, subject, marks);
         }
         public StudentClass? Search(string headerKey, string key)
         {
             StudentClass s = new StudentClass();
             RowData rowData;
-            rowData = outs.SearchExcelFile(filePath + "/StudentRecord.xlsx", "StudentCredentials", headerKey, key);
+            rowData = outs.SearchExcelFile(filePath + "\\StudentRecord.xlsx", "StudentCredentials", headerKey, key);
             if (rowData == null)
             {
                 Console.WriteLine("No record found");

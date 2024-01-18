@@ -1,17 +1,26 @@
 # Flex-Managment-System
-Flex System Created with C#  and Visual Studio  Window form  is excellent project to practice the concept of Object Oriented Programming. Flex is LMS system used by teachers,students and admin to manage various tasks. 
-The Project compromises of  three main modules where C# programming is in "Flex" Project and graphics are used in project "Login Pages":  
+
+Flex System Created with C# and Visual Studio Window form is excellent project to practice the concept of Object Oriented Programming. Flex is LMS system used by teachers,students and admin to manage various tasks.
+The Project compromises of three main modules where C# programming is in "Flex" Project and graphics are used in project "Login Pages":  
 **Administrator's Module.  
 Teacher's Module.  
 Student's Module.**  
-Here's what we have done in this project 
+Here's what we have done in this project
+
 # To Use You Can Use the following Username and Passwords:
-##admin login:  
-   username:admin       Password: admin  
-teacher login:  
- username:Username  Password:Username@123  
-student login:  
- username:abubaker  Password:abubaker  ##
+
+## admin login:
+
+username: admin <br/> Password: admin
+
+## teacher login:
+
+username:Username <br/> Password:Username@123
+
+## Student login:
+
+First add the student , then login..
+
 # **Administrator Module:**
 
 I've implemented a "Sign In" feature that prompts users to enter their unique username and password for authentication. For now, I'm using "admin/admin" for testing.
@@ -57,11 +66,13 @@ Lastly, the "Assign Grades" function is in progress, allowing teachers to upload
 This project involves a comprehensive set of features that I'm implementing step by step. It's important to ensure that each functionality is tested thoroughly before moving on to the next.
 
 ### **Instruction to run Project**
+
 1. Download and extract the folder.
 2. Go to Flex>login pages.
 3. Launch LoginPages.sln.
 
-# Developers:  
+# Developers:
+
 This project is jointly developed by:  
-[Huraira Muzammal](https://github.com/hurairamuzammal "profile") and 
-[Shayan Zawar](https://github.com/SHAYANZAWAR "profile"). 
+[Huraira Muzammal](https://github.com/hurairamuzammal "profile") and
+[Shayan Zawar](https://github.com/SHAYANZAWAR "profile").

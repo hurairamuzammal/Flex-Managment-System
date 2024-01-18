@@ -1,4 +1,5 @@
 ﻿using ClosedXML.Excel;
+using Flex.EducationalPerson.teacher;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,111 +12,127 @@ using System.Windows.Forms;
 
 namespace LoginPages.Teacher
 {
-    public partial class Teacher_AssignMarks : Form
-    {
-        string rollno, marks, subject;
-        public Teacher_AssignMarks()
-        {
-            InitializeComponent();
-        }
+     public partial class Teacher_AssignMarks : Form
+     {
+          string rollno, marks, subject;
+          public Teacher_AssignMarks()
+          {
+               InitializeComponent();
+          }
 
-        private void Teacher_AssignMarks_Load(object sender, EventArgs e)
-        {
-            marks = marks_box.Text;
-        }
+          private void Teacher_AssignMarks_Load(object sender, EventArgs e)
+          {
+               
+          }
 
-        private void RollNo_box_TextChanged(object sender, EventArgs e)
-        {
-            marks = RollNo_box.Text;
-        }
+          private void RollNo_box_TextChanged(object sender, EventArgs e)
+          {
+               subject = RollNo_box.Text;
+          }
 
-        private void open_button_Click(object sender, EventArgs e)
-        {
-            //DataTable dt = new DataTable();
+          private void open_button_Click(object sender, EventArgs e)
+          {
+               //DataTable dt = new DataTable();
 
-            //using (XLWorkbook workbook = new XLWorkbook("C:/Users/Huraira/source/repos/Flex/EducationalPerson/Student/StudentRecord.xlsx"))
-            //{
-            //    IXLWorksheet worksheet;
-            //    if (workbook.TryGetWorksheet((rollno + "(Marks)"), out worksheet))
-            //    {
-            //        MessageBox.Show("File is opened");
-            //        bool isFirstRow = true;
-            //        var rows = worksheet.RowsUsed();
+               //using (XLWorkbook workbook = new XLWorkbook("C:/Users/Huraira/source/repos/Flex/EducationalPerson/Student/StudentRecord.xlsx"))
+               //{
+               //    IXLWorksheet worksheet;
+               //    if (workbook.TryGetWorksheet((rollno + "(Marks)"), out worksheet))
+               //    {
+               //        MessageBox.Show("File is opened");
+               //        bool isFirstRow = true;
+               //        var rows = worksheet.RowsUsed();
 
-            //        foreach (var row in rows)
-            //        {
-            //            if (isFirstRow)
-            //            {
-            //                foreach (IXLCell cell in row.Cells())
-            //                    dt.Columns.Add(cell.Value.ToString());
-            //                isFirstRow = false;
-            //            }
-            //            else
-            //            {
-            //                dt.Rows.Add();
-            //                int i = 0;
-            //                foreach (IXLCell cell in row.Cells())
-            //                    dt.Rows[dt.Rows.Count - 1][i++] = cell.Value.ToString();
-            //            }
-            //        }
+               //        foreach (var row in rows)
+               //        {
+               //            if (isFirstRow)
+               //            {
+               //                foreach (IXLCell cell in row.Cells())
+               //                    dt.Columns.Add(cell.Value.ToString());
+               //                isFirstRow = false;
+               //            }
+               //            else
+               //            {
+               //                dt.Rows.Add();
+               //                int i = 0;
+               //                foreach (IXLCell cell in row.Cells())
+               //                    dt.Rows[dt.Rows.Count - 1][i++] = cell.Value.ToString();
+               //            }
+               //        }
 
-            //        // Perform actions on the DataTable
-            //        // Example: Print the data in the DataTable
-            //        foreach (DataRow dataRow in dt.Rows)
-            //        {
-            //            foreach (var item in dataRow.ItemArray)
-            //                Console.Write(item.ToString() + "\t");
-            //            Console.WriteLine();
-            //        }
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("Sheet not found!");
-            //    }
-            //}
-
-
-        }
+               //        // Perform actions on the DataTable
+               //        // Example: Print the data in the DataTable
+               //        foreach (DataRow dataRow in dt.Rows)
+               //        {
+               //            foreach (var item in dataRow.ItemArray)
+               //                Console.Write(item.ToString() + "\t");
+               //            Console.WriteLine();
+               //        }
+               //    }
+               //    else
+               //    {
+               //        Console.WriteLine("Sheet not found!");
+               //    }
+               //}
 
 
-        private void btnSerach_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                DataView dv = dataGridView1.DataSource as DataView;
-                if (dv != null)
-                { dv.RowFilter = textsearch.Text; }
-            }
-            catch (Exception ex)
-            { MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-        }
+          }
 
-        private void textsearch_TextChanged(object sender, EventArgs e)
-        {
-            rollno = RollNo_box.Text;
-        }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            rollno = RollNo_box.Text;
-        }
+          private void btnSerach_Click(object sender, EventArgs e)
+          {
+               try
+               {
+                    DataView dv = dataGridView1.DataSource as DataView;
+                    if (dv != null)
+                    { dv.RowFilter = textsearch.Text; }
+               }
+               catch (Exception ex)
+               { MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+          }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)13)
-            {
-                btnSerach.PerformClick();
-            }
-        }
+          private void textsearch_TextChanged(object sender, EventArgs e)
+          {
+               
+          }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
+          private void textBox1_TextChanged(object sender, EventArgs e)
+          {
+               rollno = textBox1.Text;
+          }
 
-        }
+          private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+          {
+               if (e.KeyChar == (char)13)
+               {
+                    btnSerach.PerformClick();
+               }
+          }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+          private void label5_Click(object sender, EventArgs e)
+          {
 
-        }
-    }
+          }
+
+          private void button1_Click(object sender, EventArgs e)
+          {
+               TeacherClass teacher = new TeacherClass();
+               MessageBox.Show(rollno);
+               var res = teacher.assignStudentMarks(rollno, DateTime.Now, subject, marks);
+
+               if (res == null)
+               {
+                    MessageBox.Show("id not found");
+               }
+               else if (res == "marked")
+               {
+                    MessageBox.Show("Attendance succesfully marked");
+               }
+          }
+
+          private void marks_box_TextChanged(object sender, EventArgs e)
+          {
+               marks = marks_box.Text;
+          }
+     }
 }

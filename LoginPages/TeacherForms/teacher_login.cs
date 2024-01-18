@@ -44,9 +44,9 @@ namespace LoginPages.Teacher
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TeacherClass teacher = new TeacherClass();
+            TeacherClass? teacher = new TeacherClass();
             
-            teacher = teacher.Search(username, password);
+            teacher = teacher.Search("Password", password);
             if(teacher==null) { MessageBox.Show("Wrong Username or Password!");return; }
             if (teacher.getPassword() == password)
             {
