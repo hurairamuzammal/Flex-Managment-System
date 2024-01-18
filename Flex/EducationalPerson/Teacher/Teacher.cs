@@ -18,10 +18,12 @@ namespace Flex.EducationalPerson.teacher
         public TeacherClass()
         {
             outs = new ExcelWrite();
-            filePath = "C:/Users/Huraira/source/repos/Flex/EducationalPerson/Teacher/";
+            DirectoryInfo di = new DirectoryInfo("../../../../");
+            filePath = di.FullName.ToString() + "Flex\\EducationalPerson\\Teacher";
 
-        }
-        public override bool addToRecord(string firstName, string lastName, string deptName, string id, string regisDate, string gender, string contactNo,
+
+          }
+          public override bool addToRecord(string firstName, string lastName, string deptName, string id, string regisDate, string gender, string contactNo,
             string qualification, string address, string bloodGroup, string feeStatus, string marks, string username, string password)
         {
             tmList = new TestModelList();
@@ -61,12 +63,13 @@ namespace Flex.EducationalPerson.teacher
             return student.markStudentAttendance(rollNo, subject, attendance);
         }
 
-        private string? assignStudentMarks(string rollNo, DateTime date, string subject, string marks)
+        public string? assignStudentMarks(string rollNo, DateTime date, string subject, string marks)
         {
             StudentClass student = new StudentClass();
             // searching the student with that roll number in the file
             if (student.Search("ID", rollNo) == null)
             {
+                
                 return null;
             }
 
@@ -89,7 +92,7 @@ namespace Flex.EducationalPerson.teacher
         {
             TeacherClass teacher = new TeacherClass();
             TeacherRowData? rowData;
-            rowData = outs.SearchExcelFile(filePath + "/TeacherRecord.xlsx", "TeacherCredentials", headerKey, key, "Teacher");
+            rowData = outs.SearchExcelFile(filePath + "\\TeacherRecord.xlsx", "TeacherCredentials", headerKey, key, "Teacher");
             if (rowData == null)
             {
                 Console.WriteLine("No record found");

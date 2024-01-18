@@ -102,9 +102,10 @@ namespace LoginPages
         private void submit_btn_Click(object sender, EventArgs e)
         {
             StudentClass student = new StudentClass();
-            student.addToRecord(f_name, l_name, dept, id, regisDate, gender, contact, qualification, address, bloodgroup, feeStatus, marks, username, password);
+            bool res = student.addToRecord(f_name, l_name, dept, id, regisDate, gender, contact, qualification, address, bloodgroup, feeStatus, marks, username, password);
 
-            MessageBox.Show("Student Registered Successfully");
+               if (res) MessageBox.Show("Student Registered Successfully");
+               else MessageBox.Show("Unknown Error, Student not registered");
         }
     }
 }
