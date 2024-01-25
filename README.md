@@ -8,6 +8,14 @@ Student's Module.**
 Here's what we have done in this project
 
 # To Use You Can Use the following Username and Passwords:
+<<<<<<< hurairamuzammal-patch-1
+## admin login:  
+   username:admin       Password: admin  
+teacher login:  
+ username:Username  Password:Username@123  
+student login:  
+ username:abubaker  Password:abubaker  ##
+=======
 
 ## admin login:
 
@@ -21,6 +29,7 @@ username:Username <br/> Password:Username@123
 
 First add the student , then login..
 
+>>>>>>> fix
 # **Administrator Module:**
 
 I've implemented a "Sign In" feature that prompts users to enter their unique username and password for authentication. For now, I'm using "admin/admin" for testing.
