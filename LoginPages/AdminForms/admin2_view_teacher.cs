@@ -37,36 +37,61 @@ namespace LoginPages.Admin
 
         private void open_button_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            using (XLWorkbook workbook = new XLWorkbook("C:/Users/Huraira/source/repos/Flex/EducationalPerson/Teacher/TeacherRecord.xlsx"))
-            {
-                bool isFirstRow = true;
-                var rows = workbook.Worksheet(1).RowsUsed();
-                foreach (var row in rows)
-                {
-                    if (isFirstRow)
+               DataTable dt = new DataTable();
+               DirectoryInfo di = new DirectoryInfo("../../../../");
+               string filePath = di.FullName.ToString() + "Flex\\EducationalPerson\\Teacher\\TeacherRecord.xlsx";
+               int idInd = 0;
+               string key = textsearch.Text;
+               bool found = false;
+               if (key == "")
+               {
+                    MessageBox.Show("Please enter the id of the Teacher you want to view");
+               }
+
+               using (XLWorkbook workbook = new XLWorkbook(filePath))
+               {
+                    bool isFirstRow = true;
+                    var rows = workbook.Worksheet(1).RowsUsed();
+                    foreach (var row in rows)
                     {
-                        foreach (IXLCell cell in row.Cells())
-                            dt.Columns.Add(cell.Value.ToString());
-                        isFirstRow = false;
+                         if (isFirstRow)
+                         {
+                              foreach (IXLCell cell in row.Cells())
+                              {
+                                   dt.Columns.Add(cell.Value.ToString());
+                                   if (cell.Value.ToString() == "ID") { idInd = cell.Address.ColumnNumber; }
+                              }
+                              isFirstRow = false;
 
+                         }
+                         else
+                         {
+                              if (row.Cell(idInd).Value.ToString() == key)
+                              {
+                                   found = true;
+                                   dt.Rows.Add();
+                                   int i = 0;
+                                   foreach (IXLCell cell in row.Cells())
+                                        dt.Rows[dt.Rows.Count - 1][i++] = cell.Value.ToString();
+
+                              }
+                              break;
+                         }
                     }
-                    else
+
+                    if (found == false)
                     {
-                        dt.Rows.Add();
-                        int i = 0;
-                        foreach (IXLCell cell in row.Cells())
-                            dt.Rows[dt.Rows.Count - 1][i++] = cell.Value.ToString();
+                         dt.Clear();
+                         MessageBox.Show("No Teacher with this id exists");
                     }
-                }
-                dataGridView1.DataSource = dt.DefaultView;
-                lblTotal.Text = $"Total records:{dataGridView1.RowCount}";
-                Cursor.Current = Cursors.Default;
 
-            }
-        }
+                    dataGridView1.DataSource = dt.DefaultView;
 
-        private void textsearch_KeyPress(object sender, KeyPressEventArgs e)
+                    Cursor.Current = Cursors.Default;
+
+               }
+               }
+               private void textsearch_KeyPress(object sender, KeyPressEventArgs e)
         {
 
             if (e.KeyChar == (char)13)

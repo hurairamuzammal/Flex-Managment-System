@@ -40,7 +40,17 @@ namespace LoginPages
         private void open_button_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            using (XLWorkbook workbook = new XLWorkbook("C:/Users/Huraira/source/repos/Flex/EducationalPerson/Student/StudentRecord.xlsx"))
+               DirectoryInfo di = new DirectoryInfo("../../../../");
+               string filePath = di.FullName.ToString() + "Flex\\EducationalPerson\\Student\\StudentRecord.xlsx";
+               int idInd = 0;
+               string key = textsearch.Text;
+               bool found = false;
+               if (key == "")
+               {
+                    MessageBox.Show("Please enter the roll number of the student you want to edit");
+               }
+
+               using (XLWorkbook workbook = new XLWorkbook(filePath))
             {
                 bool isFirstRow = true;
                 var rows = workbook.Worksheet(1).RowsUsed();
@@ -49,20 +59,35 @@ namespace LoginPages
                     if (isFirstRow)
                     {
                         foreach (IXLCell cell in row.Cells())
+                        { 
                             dt.Columns.Add(cell.Value.ToString());
+                             if (cell.Value.ToString() == "ID") { idInd = cell.Address.ColumnNumber; }
+                        }
                         isFirstRow = false;
 
                     }
                     else
                     {
-                        dt.Rows.Add();
-                        int i = 0;
-                        foreach (IXLCell cell in row.Cells())
-                            dt.Rows[dt.Rows.Count - 1][i++] = cell.Value.ToString();
+                         if (row.Cell(idInd).Value.ToString() == key) {
+                              found = true;
+                              dt.Rows.Add();
+                              int i = 0;
+                              foreach (IXLCell cell in row.Cells())
+                                   dt.Rows[dt.Rows.Count - 1][i++] = cell.Value.ToString();
+                              
+                              }
+                              break;
                     }
                 }
+
+                if (found == false)
+                    {
+                         dt.Clear();
+                    MessageBox.Show("No student with this roll number exists");
+                }
+                
                 dataGridView1.DataSource = dt.DefaultView;
-                // lblTotal.Text = $"Total records:{dataGridView1.RowCount}";
+                
                 Cursor.Current = Cursors.Default;
 
             }
@@ -72,14 +97,14 @@ namespace LoginPages
 
         private void btnSerach_Click(object sender, EventArgs e)
         {
-            try
-            {
-                DataView dv = dataGridView1.DataSource as DataView;
-                if (dv != null)
-                { dv.RowFilter = textsearch.Text; }
-            }
-            catch (Exception ex)
-            { MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            //try
+            //{
+            //    DataView dv = dataGridView1.DataSource as DataView;
+            //    if (dv != null)
+            //    { dv.RowFilter = textsearch.Text; }
+            //}
+            //catch (Exception ex)
+            //{ MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         private void textsearch_TextChanged(object sender, EventArgs e)

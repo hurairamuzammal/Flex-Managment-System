@@ -13,7 +13,7 @@ namespace LoginPages.Student
 {
     public partial class student_viewMarks : Form
     {
-
+          string rollno;
         public student_viewMarks()
         {
             InitializeComponent();
@@ -27,10 +27,13 @@ namespace LoginPages.Student
         private void open_button_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            using (XLWorkbook workbook = new XLWorkbook("C:/Users/Huraira/source/repos/Flex/EducationalPerson/Student/StudentRecord.xlsx"))
+               DirectoryInfo di = new DirectoryInfo("../../../../");
+               string filePath = di.FullName.ToString() + "Flex\\EducationalPerson\\Student\\StudentRecord.xlsx";
+
+               using (XLWorkbook workbook = new XLWorkbook(filePath))
             {
                 bool isFirstRow = true;
-                var rows = workbook.Worksheet("22f-3410(Marks)").RowsUsed();
+                var rows = workbook.Worksheet(rollno+"(Marks)").RowsUsed();
                 foreach (var row in rows)
                 {
                     if (isFirstRow)
@@ -57,14 +60,7 @@ namespace LoginPages.Student
 
         private void btnSerach_Click(object sender, EventArgs e)
         {
-            try
-            {
-                DataView dv = dataGridView1.DataSource as DataView;
-                if (dv != null)
-                { dv.RowFilter = textsearch.Text; }
-            }
-            catch (Exception ex)
-            { MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            
         }
 
         private void btnSerach_KeyPress(object sender, KeyPressEventArgs e)
@@ -77,7 +73,7 @@ namespace LoginPages.Student
 
         private void textsearch_TextChanged(object sender, EventArgs e)
         {
-
+               rollno = textsearch.Text;
         }
     }
 }
