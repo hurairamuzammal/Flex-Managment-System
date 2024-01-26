@@ -4,9 +4,11 @@ Flex System Created with C# and Visual Studio Window form is excellent project t
 The Project compromises of three main modules where C# programming is in "Flex" Project and graphics are used in project "Login Pages":  
 Administrator's Module.  
 Teacher's Module.  
-Student's Module.
-Here's what we have done in this project
-
+Student's Module.  
+# Requirements
+The project using C# programming language with cli clang tool. In order to run the project please download Visual Studio 2022   
+ Download .NET devoplment pack.  
+Download cli clang tools .
 # Username and Passwords
 admin login:  
    Username: admin  
