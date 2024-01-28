@@ -5,10 +5,16 @@ The Project compromises of three main modules where C# programming is in "Flex" 
 Administrator's Module.  
 Teacher's Module.  
 Student's Module.  
-# Requirements
+# Pre Requisites 
 The project using C# programming language with cli clang tool. In order to run the project please download Visual Studio 2022   
  Download .NET devoplment pack.  
 Download cli clang tools .
+# **Instruction to run Project**
+To launch the project simply grab a copy of code . Extract the code and follow steps to launch Solution.
+
+1. Download and extract the folder.
+2. Go to Flex>login pages.
+3. Launch LoginPages.sln. 
 # Username and Passwords
 admin login:  
    Username: admin  
@@ -58,11 +64,7 @@ Lastly, the "Assign Grades" function is in progress, allowing teachers to upload
 
 This project involves a comprehensive set of features that I'm implementing step by step. It's important to ensure that each functionality is tested thoroughly before moving on to the next.
 
-### **Instruction to run Project**
 
-1. Download and extract the folder.
-2. Go to Flex>login pages.
-3. Launch LoginPages.sln. 
 
 ## Fix Issue:   
 While downloading a file form internet  Windows might block some of files to prevent attack and you may get such error.
@@ -75,3 +77,5 @@ To simply fix the issue enter LoginPages folder and search for ".resx" and you m
 This project is jointly developed by:  
 [Huraira Muzammal](https://github.com/hurairamuzammal "profile") and
 [Shayan Zawar](https://github.com/SHAYANZAWAR "profile").
+
+Suggestions for improvement is most welcomed. 😊️
