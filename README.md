@@ -6,7 +6,7 @@ Administrator's Module.
 Teacher's Module.  
 Student's Module.  
 # Pre Requisites 
-The project using C# programming language with cli clang tool. In order to run the project please download Visual Studio 2022   
+The project using C# programming language with CLI/Clang tool. In order to run the project please download Visual Studio 2022   
  Download .NET devoplment pack.  
 Download cli clang tools .
 # **Instruction to run Project**
