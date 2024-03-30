@@ -66,7 +66,7 @@ This project involves a comprehensive set of features that I'm implementing step
 
 
 
-## Fix For Issue:   
+## Fix for Possible Issue:   
 While downloading a file form internet  Windows might block some of files to prevent attack and you may get such error.
 MSB3821: Couldn't process file 'path' due to its being in the Internet or Restricted zone or having the mark of the web on the file.  
 To simply fix the issue enter LoginPages folder and search for ".resx" and you may get upto 26 ".resx" files. You need to select unblock in properties of search result to fix the issue.
