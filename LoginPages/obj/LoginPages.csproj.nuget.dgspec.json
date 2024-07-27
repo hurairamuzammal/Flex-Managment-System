@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Shayan\\Desktop\\work\\FlexManagement\\LoginPages\\LoginPages.csproj": {}
+    "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\LoginPages\\LoginPages.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Shayan\\Desktop\\work\\FlexManagement\\Flex\\Flex.csproj": {
+    "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\Flex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shayan\\Desktop\\work\\FlexManagement\\Flex\\Flex.csproj",
+        "projectUniqueName": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\Flex.csproj",
         "projectName": "Flex",
-        "projectPath": "C:\\Users\\Shayan\\Desktop\\work\\FlexManagement\\Flex\\Flex.csproj",
-        "packagesPath": "C:\\Users\\Shayan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shayan\\Desktop\\work\\FlexManagement\\Flex\\obj\\",
+        "projectPath": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\Flex.csproj",
+        "packagesPath": "C:\\Users\\Huraira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Shayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Huraira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -64,30 +65,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Shayan\\Desktop\\work\\FlexManagement\\LoginPages\\LoginPages.csproj": {
+    "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\LoginPages\\LoginPages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shayan\\Desktop\\work\\FlexManagement\\LoginPages\\LoginPages.csproj",
+        "projectUniqueName": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\LoginPages\\LoginPages.csproj",
         "projectName": "LoginPages",
-        "projectPath": "C:\\Users\\Shayan\\Desktop\\work\\FlexManagement\\LoginPages\\LoginPages.csproj",
-        "packagesPath": "C:\\Users\\Shayan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shayan\\Desktop\\work\\FlexManagement\\LoginPages\\obj\\",
+        "projectPath": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\LoginPages\\LoginPages.csproj",
+        "packagesPath": "C:\\Users\\Huraira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\LoginPages\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Shayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Huraira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,8 +116,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\Shayan\\Desktop\\work\\FlexManagement\\Flex\\Flex.csproj": {
-                "projectPath": "C:\\Users\\Shayan\\Desktop\\work\\FlexManagement\\Flex\\Flex.csproj"
+              "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\Flex.csproj": {
+                "projectPath": "C:\\Users\\Huraira\\Extras\\Flex-Managment-System\\Flex\\Flex.csproj"
               }
             }
           }
@@ -111,6 +126,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -133,6 +153,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -141,7 +179,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

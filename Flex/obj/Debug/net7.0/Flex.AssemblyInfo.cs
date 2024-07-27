@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Flex")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c968e513cfbba3bfd3f4aec4f8d3f9c724ef0178")]
 [assembly: System.Reflection.AssemblyProductAttribute("Flex")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Flex")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
